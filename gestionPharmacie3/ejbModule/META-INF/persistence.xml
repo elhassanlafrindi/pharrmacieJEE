@@ -1,0 +1,16 @@
+<persistence  xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+	<persistence-unit name="GestionPharmacie3" transaction-type="JTA">
+    <jta-data-source>java:/Gestionpharmacie3</jta-data-source>
+    <class>Metier.Entities.User</class>
+    <class>Metier.Entities.Pharmacien</class>
+    <class>Metier.Entities.Admin</class>
+    <class>Metier.Entities.Patient</class>
+       <class>Metier.Entities.Notification</class>
+          <class>Metier.Entities.Commande</class>
+    <properties>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+        
+    </properties>
+</persistence-unit>
+</persistence>

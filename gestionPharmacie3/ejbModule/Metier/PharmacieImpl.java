@@ -222,7 +222,7 @@ public class PharmacieImpl implements PharmacieLocal , PharmacieRemote{
 
 	        Session session = Session.getInstance(properties, new Authenticator() {
 	            protected PasswordAuthentication getPasswordAuthentication() {
-	                return new PasswordAuthentication("hmoha4731@gmail.com", "uzzbizrhmzcewypw");
+	                return new PasswordAuthentication("hmoha4731@gmail.com", "");
 	            }
 	        });
 
